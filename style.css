@@ -181,17 +181,17 @@ h4 {
 /** Minions made by retrogamer406 at https://www.spriters-resource.com/genesis_32x_scd/despicableme2bootleg/sheet/61151/?source=genre*/
 @keyframes minionanimation {
     0% {
-        background: url(/images/minions/look1.png);
+        background: url(/h3/images/minions/look1.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
     50% {
-        background: url(/images/minions/look2.png);
+        background: url(/h3/images/minions/look2.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
     100% {
-        background: url(/images/minions/look3.png);
+        background: url(/h3/images/minions/look3.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
