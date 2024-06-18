@@ -1,0 +1,206 @@
+/*! (OG) background from https://projects.verou.me/css3patterns/#blueprint-grid */
+html {
+    background-color:rgb(13, 95, 158);
+    background-image: linear-gradient(white 2px, transparent 2px),
+    linear-gradient(90deg, white 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+
+    overflow: hidden;
+}
+
+/*! Everything */
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*! Pretty self explanatory */
+.bold {
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+/*! (OG) Background from https://projects.verou.me/css3patterns/#lined-paper */
+.left {
+    display: flex;
+    width: 45%;
+    min-width: 600px;
+    margin: 0;
+    height: 100%;
+    border-right: 2px solid black;
+
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.8em;
+}
+
+.right {
+    height: 100%;
+    width: 55%;
+}
+
+.content {
+    height: 100%;
+    width: 55%;
+}
+
+/*! #links -> .l for the signpost thing */
+#links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    height: 100%;
+    width: 15%;
+}
+
+#post {
+    position: absolute;
+    border: 2px solid #663300;
+    width: 2px;
+    height: 100%;
+}
+
+.sign {
+    border: none;
+    height: 30px;
+    background: #663300;
+    padding: 0 20px 0 20px;
+    color: #eee;
+}
+
+.r {
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+
+.l {
+    clip-path: polygon(100% 0, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+}
+
+/*TODO rand for each: length, location*/
+
+/*! Car animation */
+#car {
+    margin: 5px 10% 5px 10%;
+    width: 80%;
+    height: 30px;
+    border-bottom: 2px solid black;
+    border-right: 5px solid black;
+}
+
+.sRight {
+    float: left;
+    height: 30px;
+    width: 38px;
+    animation: 1.5s ease-in 0s infinite running slideR;
+}
+
+.sRight:hover {
+    cursor: not-allowed;
+    animation-play-state: paused;
+}
+
+@keyframes slideR {
+    0% {
+        margin-left: 0;
+      }
+    100% { 
+        margin-left: calc(100% - 38px); 
+    }
+}
+
+/*! Google search bar */
+input {
+    text-align: left;
+    color: black;
+    border-radius: 24px;
+    border: 2px solid rgb(0 0 0);
+    background: rgba(0, 0, 0, 0.126);  
+    padding: 20px;
+
+    width: 300px;
+    height: 44px;
+    margin: 20px;
+    outline: none;
+}
+    
+#search:hover{
+    box-shadow: 0 0 5px 1px rgb(0 0 0/60%);
+}
+    
+::placeholder{
+    color: black;
+}
+
+/*! Time */
+#time {
+    font-family: "Garamond";
+    font-size: 55px;
+    margin: 0;
+    text-decoration: 3px dashed underline;
+}
+
+/*! Probably shoulda put this in *, but im too lazy now */
+p, h2, h3, h4 {
+    margin: 0;
+}
+
+h4 {
+    position: relative;
+    left: 10%;
+    text-align: left;
+}
+
+/*! Minion animation */
+#minion {
+    position: relative;
+    left: 10%;
+    image-rendering: pixelated;
+    width: 64px;
+    height: 76px;
+    border-bottom: 2px solid black;
+    animation: 2s linear 0s infinite running minionanimation;
+}
+
+/** Minions made by retrogamer406 at https://www.spriters-resource.com/genesis_32x_scd/despicableme2bootleg/sheet/61151/?source=genre*/
+@keyframes minionanimation {
+    0% {
+        background: url(/images/minions/look1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background: url(/images/minions/look2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url(/images/minions/look3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/*! Hidden command input */
+#command {
+    background: transparent;
+    border: none;
+    cursor: help;
+}
+

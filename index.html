@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? Import Roboto, Script, Merriweather font, (only used merriweather) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--? Favicon + css linking -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Home</title>
+</head>
+<body>
+    <!--? Lined paper section -->
+    <div class="left">
+        <!--? Sign looking thingy -->
+        <div id="links">
+            <div id="post"></div>
+            <a href="https://jmss-vic.compass.education/"><button class="sign l">Compass</button></a>
+            <a href="https://jmss.instructure.com/?login_success=1"><button class="sign r">Canvas</button></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"><button class="sign r">Gmail</button></a>
+            <a href="https://sites.google.com/jmss.vic.edu.au/subjects/home"><button class="sign l">Subject</button></a>
+            <a href="https://drive.google.com/drive/my-drive"><button class="sign r">Drive</button></a>
+            <a href="https://github.com/alxu31"><button class="sign l">Github</button></a>
+            <a href="https://sites.google.com/a/jmss.vic.edu.au/portal/students"><button class="sign r">Portal</button></a>
+            <a href="https://geotastic.net/home"><button class="sign l">Geotastic</button></a>
+        </div>
+        <!--? The actual content on the lined paper -->
+        <div class="content">
+            <br>
+            <!--? Time -->
+            <h2 class="bold">Bro It's</h2>
+            <h1 id="time">--:--:--</h1>
+            <h2 class="italic">lemme sleep.</h2>
+            <!--? Google search bar -->
+            <form action="https://www.google.com/search" method="get" id="search-form">
+            <input id="search" type="text" placeholder="Got a question? Too bad." autocomplete="off" autofocus></form>
+            <a href="https://www.google.com"></a>
+            
+            <!--? Car section -->
+            <h3>*If Comp Was A Driving Lesson*</h3>
+            <p>"faster, FaStEr, FASTER!"</p>
+            <div id="car">
+                <img src="images/car.svg" alt="a car" class="sRight">
+            </div>
+
+            <!--? Minion section -->
+            <br>
+            <h4 id="minlabel">MiNION</h4>
+            <div id="minion"></div>
+
+            <!--? Hidden command input -->
+            <input type="text" id="command" autocomplete="off">
+        </div>
+    </div>
+
+    <!--? Graph paper section (overlay on body) -->
+    <div class="right">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
