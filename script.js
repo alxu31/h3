@@ -139,8 +139,8 @@ new Chart("graph", {
                     display: false
                 },
                 ticks : {
-                    min: -30,
-                    max: 30,
+                    min: -26,
+                    max: 21,
                     stepSize: 1
                 },
             }]
