@@ -22,7 +22,7 @@
     <!--? Lined paper section -->
     <div class="left">
         <!--? Sign looking thingy -->
-        <div id="links">
+        <div class="links">
             <div id="post"></div>
             <a href="https://jmss-vic.compass.education/"><button class="sign l">Compass</button></a>
             <a href="https://jmss.instructure.com/?login_success=1"><button class="sign r">Canvas</button></a>
@@ -32,6 +32,9 @@
             <a href="https://github.com/alxu31"><button class="sign l">Github</button></a>
             <a href="https://sites.google.com/a/jmss.vic.edu.au/portal/students"><button class="sign r">Portal</button></a>
             <a href="https://geotastic.net/home"><button class="sign l">Geotastic</button></a>
+
+            <div id="grass1"></div>
+            <div id="grass2"></div>
         </div>
         <!--? The actual content on the lined paper -->
         <div class="content">
@@ -41,15 +44,18 @@
             <h1 id="time">--:--:--</h1>
             <h2 class="italic">lemme sleep.</h2>
             <!--? Google search bar -->
-            <form action="https://www.google.com/search" method="get" id="search-form">
-            <input id="search" type="text" placeholder="Got a question? Too bad." autocomplete="off" autofocus></form>
-            <a href="https://www.google.com"></a>
-            
+            <div id="google">
+                <form action="https://www.google.com/search" method="get" id="search-form">
+                <input id="search" type="text" placeholder="Got a question? Too bad." autocomplete="off" autofocus></form>
+                <a href="https://www.google.com"></a>
+            </div>
             <!--? Car section -->
-            <h3>*If Comp Was A Driving Lesson*</h3>
-            <p>"faster, FaStEr, FASTER!"</p>
-            <div id="car">
-                <img src="/h3/images/car.svg" alt="a car" class="sRight">
+            <div id="carall">
+                <h3>*If Comp Was A Driving Lesson*</h3>
+                <p>"faster, FaStEr, FASTER!"</p>
+                <div id="car">
+                    <img src="/h3/images/car.svg" alt="a car" class="sRight">
+                </div>
             </div>
 
             <!--? Minion section -->
@@ -64,8 +70,16 @@
 
     <!--? Graph paper section (overlay on body) -->
     <div class="right">
-        
+        <canvas id="graph"></canvas>
+        <div id="legend">
+            <div id="red"></div>
+            <p class="llabel">: Alex's Life (quality) VS Age (years)</p>
+        </div>
     </div>
+
+    <!--? Link to chart.js scripts + js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

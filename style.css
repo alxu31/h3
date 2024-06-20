@@ -1,8 +1,8 @@
 /*! (OG) background from https://projects.verou.me/css3patterns/#blueprint-grid */
 html {
     background-color:rgb(13, 95, 158);
-    background-image: linear-gradient(white 2px, transparent 2px),
-    linear-gradient(90deg, white 2px, transparent 2px),
+    background-image: linear-gradient(rgb(128, 190, 237) 2px, transparent 2px),
+    linear-gradient(90deg, rgb(128, 190, 237) 2px, transparent 2px),
     linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
@@ -16,6 +16,8 @@ html {
     box-sizing: border-box;
     text-align: center;
 }
+
+/*? Left side stuff */
 
 /*! Pretty self explanatory */
 .bold {
@@ -41,7 +43,7 @@ body {
     min-width: 600px;
     margin: 0;
     height: 100%;
-    border-right: 2px solid black;
+    border-right: 2px solid white;
 
     background-color: #fff;
     background-image:
@@ -60,17 +62,20 @@ body {
     width: 55%;
 }
 
-/*! #links -> .l for the signpost thing */
-#links {
+/*! #links -> #grass2 for the signpost thing */
+.links {
+    padding-top: 15%;
     display: flex;
     justify-content: center;
+    align-content: flex-start;
     flex-wrap: wrap;
     margin-left: 15%;
-    height: 100%;
+    height: 85%;
     width: 15%;
 }
 
 #post {
+    margin-top: -6px;
     position: absolute;
     border: 2px solid #663300;
     width: 2px;
@@ -85,6 +90,35 @@ body {
     color: #eee;
 }
 
+a {
+    height: 30px;
+}
+
+/** 1st child is the post */
+.links a:nth-child(n) {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.links a:nth-child(2n) {
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.links a:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.links a:nth-child(4) {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.links a:nth-child(3n) {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
 .r {
     clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
 }
@@ -93,7 +127,27 @@ body {
     clip-path: polygon(100% 0, 90% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
 }
 
-/*TODO rand for each: length, location*/
+#grass1, #grass2 {
+    position: absolute;
+    bottom: -12px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+}
+
+#grass1 {
+    border-bottom: 40px solid #138510;
+    border-right: 5px solid transparent;
+    transform: rotateZ(-60deg);
+    margin-right: 30px;
+}
+
+#grass2 {
+    border-bottom: 40px solid #117c13;
+    border-right: 10px solid transparent;
+    transform: rotateZ(45deg);
+    margin-left: 20px;
+}
 
 /*! Car animation */
 #car {
@@ -203,4 +257,34 @@ h4 {
     border: none;
     cursor: help;
 }
+
+/*? Right side stuff */
+
+/*! Graph */
+#graph {
+    height: 100%;
+    width: 100%;
+    margin: 15% 0 0 0;
+}
+
+/*! Graph legend stuff */
+#legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9%;
+    width: 100%;
+}
+
+#red {
+    height: 20px;
+    width: 60px;
+    background: rgba(255, 0, 0, 0.7);
+    border: 2px solid red;
+}
+
+.llabel {
+    color: white;
+}
+
 
