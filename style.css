@@ -77,7 +77,7 @@ body {
 #post {
     margin-top: -6px;
     position: absolute;
-    border: 2px solid #663300;
+    border: 2px solid #562b00;
     width: 2px;
     height: 100%;
 }
@@ -85,9 +85,10 @@ body {
 .sign {
     border: none;
     height: 30px;
-    background: #663300;
+    background: #633200;
     padding: 0 20px 0 20px;
-    color: #eee;
+    color: #ffffb3;
+    font-family: "Oleo Script", system-ui;
 }
 
 a {
