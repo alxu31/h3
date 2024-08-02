@@ -5,6 +5,16 @@ function updateTime() {
     document.getElementById("time").innerHTML = dt.toLocaleTimeString();
 }
 
+// Prevents zooming so hidden elements cannot be viewed by zooming in and scrolling
+// Idek why this happens even when I use overflow hidden
+document.addEventListener('wheel', (e)=>{
+    e.preventDefault();
+}, {passive: false});
+
+document.addEventListener('touchmove', (e)=>{
+    e.preventDefault();
+}, {passive: false});
+
 // This makes it like 1ms faster on initial load lol
 window.addEventListener('DOMContentLoaded', updateTime)
 
@@ -84,7 +94,6 @@ command.addEventListener('keyup', (e) => {
 })
 
 //*
-
 //! Internet + ChatGPT helped make this
 // Points on the graph
 const xValues = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
