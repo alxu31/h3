@@ -298,3 +298,33 @@ h4 {
 }
 
 
+
+/*! For larger screens (added css) */
+@media (min-width: 1441px) {
+    * {
+        font-size: 1vw;
+    }
+    .bold {
+        font-size: 2vw;
+    }
+    .italic {
+        font-size: 1.5vw;
+    }
+    .sign {
+        height: 4vh;
+    }
+    #car {
+        height: 5vh;
+    }
+    .sRight {
+        height: 5vh;
+        width: 3vw;
+    }
+    #time {
+        font-size: 4vw;
+    }
+    #minion {
+        width: 5vw;
+        height: 12.8vh;
+    }
+}
