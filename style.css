@@ -327,4 +327,23 @@ h4 {
         width: 5vw;
         height: 12.8vh;
     }
+    input {
+        width: 22vw;
+        height: 5vh;
+    }
+    .links a:nth-child(6) {
+        margin-bottom: 6vh;
+    }
+    #grass1 {
+        border-bottom: 80px solid #138510;
+        border-right: 10px solid transparent;
+        transform: translateY(4px) rotateZ(-60deg);
+        margin-right: 60px;
+    }
+    #grass2 {
+        border-bottom: 80px solid #117c13;
+        border-right: 20px solid transparent;
+        transform: translateY(4px) rotateZ(45deg);
+        margin-left: 40px;
+    }
 }
